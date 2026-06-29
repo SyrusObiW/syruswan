@@ -1,0 +1,1056 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "a01cd29d-1619-92be-4531-20fcf70efe4c",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Lab2_WH",
+  "type": "data_warehouse",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "0ee8d9b3-7087-4b0a-b7b4-3b5e6ded3d7e",
+      "is_selected": false,
+      "display_name": "Schemas",
+      "type": "schema_grouping",
+      "description": null,
+      "children": [
+        {
+          "id": "76a0c6aa-757d-4f3c-b39b-96e4a97a4bc2",
+          "is_selected": false,
+          "display_name": "dbo",
+          "type": "warehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "9a57658c-60a7-4158-bb34-d7b5ccf9bdbd",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "d45323bc-5819-4daa-b1d9-35d95a79f2d2",
+                  "is_selected": true,
+                  "display_name": "dim_store",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "e14e6b97-cb7e-49cb-b912-65077817ca04",
+                      "is_selected": true,
+                      "display_name": "store_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "703da6e4-0992-4c53-b142-9c81bce0f261",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ad9837cc-ab98-4c22-90b0-891bf357a5c0",
+                      "is_selected": true,
+                      "display_name": "store_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2d1746e9-1feb-4b82-a6df-60cfb04985cf",
+                      "is_selected": true,
+                      "display_name": "city",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b09b654a-9727-4393-8b3c-ccfb244f01b1",
+                      "is_selected": true,
+                      "display_name": "country",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c79b8ddd-d5a8-44a8-a890-18efee82a009",
+                      "is_selected": true,
+                      "display_name": "region",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "44536ad2-fc97-4b2a-b6f5-be11e8902900",
+                      "is_selected": true,
+                      "display_name": "store_type",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d952c137-2427-4119-b73f-b786df45e25b",
+                      "is_selected": true,
+                      "display_name": "open_year",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "4fb66da3-6681-4001-a661-d00a824ca8b8",
+                  "is_selected": true,
+                  "display_name": "dim_customer",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "e12590a9-c56d-4e65-852e-3caec55f035c",
+                      "is_selected": true,
+                      "display_name": "customer_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b7069fef-9a25-439a-afe2-8fbf270ce919",
+                      "is_selected": true,
+                      "display_name": "customer_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f57cd0cb-a3f3-49f5-8711-8327fba5721c",
+                      "is_selected": true,
+                      "display_name": "full_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6d2e25c2-9556-4250-aa25-4e646be6c460",
+                      "is_selected": true,
+                      "display_name": "email",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0394b0ba-7093-4c24-8a81-d3338887dede",
+                      "is_selected": true,
+                      "display_name": "city",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0413283e-74b3-46e0-90b6-a492cd1ce2b8",
+                      "is_selected": true,
+                      "display_name": "country",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6157b019-afbd-4763-a89c-7b051f0fc1d3",
+                      "is_selected": true,
+                      "display_name": "segment",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "183627b2-b39c-4875-b5d7-a71142b2f591",
+                      "is_selected": true,
+                      "display_name": "created_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "21a40cef-7141-430d-adc8-2b73b5c328b3",
+                  "is_selected": true,
+                  "display_name": "dim_product",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "11bb6839-5d4f-4489-9cda-e5567588c0b8",
+                      "is_selected": true,
+                      "display_name": "product_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "974fb9b0-56bb-45a9-b683-3901c898f70b",
+                      "is_selected": true,
+                      "display_name": "product_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "312613cb-f3d4-47a6-9e56-ba9069d19a82",
+                      "is_selected": true,
+                      "display_name": "product_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "7ed4d7fa-7f20-493f-84d4-2a97fa50725e",
+                      "is_selected": true,
+                      "display_name": "category",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4b1ad157-51e3-49c3-a656-c821911ad8e1",
+                      "is_selected": true,
+                      "display_name": "subcategory",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c2252686-ff62-4f3d-bf52-49c084bcb343",
+                      "is_selected": true,
+                      "display_name": "brand",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "55e516f0-485b-4130-9912-73301c2ce6c7",
+                      "is_selected": true,
+                      "display_name": "cost_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cb1173e4-b84f-4b39-a756-7faec0d42765",
+                      "is_selected": true,
+                      "display_name": "list_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "87d85c19-7583-4507-9ff4-4adf05d104ec",
+                  "is_selected": false,
+                  "display_name": "agg_sales_by_product",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "97701e4b-96a1-4d9e-9b4a-f95e62ddbc60",
+                      "is_selected": true,
+                      "display_name": "product id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "e95a29c2-0a69-49f8-9774-c2a6183434e8",
+                      "is_selected": true,
+                      "display_name": "sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c26adc86-eb78-4324-bc3b-3b2bbefdb78e",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "776a9ffd-b6ec-4914-9c04-344332d362a7",
+                      "is_selected": true,
+                      "display_name": "sale_date_clean",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "0e92d946-f224-4c58-9c28-6f66ed893245",
+                      "is_selected": true,
+                      "display_name": "sum_revenue",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "8a51f88a-5ca9-4b9a-81d0-5ccce4f83e15",
+                      "is_selected": true,
+                      "display_name": "sum_quantity",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b84e54ab-b116-4ab2-8653-6f2709733f3d",
+                      "is_selected": true,
+                      "display_name": "count_sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "6fa0951d-b64c-4268-a56f-a24ade94d965",
+                  "is_selected": false,
+                  "display_name": "agg_sales_by_customer",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "795d161b-6895-40c6-a9bb-6f40999d6875",
+                      "is_selected": true,
+                      "display_name": "customer_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a9e342ef-4486-4e93-81bd-a685b64b1c03",
+                      "is_selected": true,
+                      "display_name": "sale_date_clean",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d472a68b-b5cf-415b-bf0e-79964c495c8b",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "cd76b378-0f8f-495e-b5dc-507cb2817497",
+                      "is_selected": true,
+                      "display_name": "sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "7a4434cb-8e10-4991-b5c3-0ef01d2bc15a",
+                      "is_selected": true,
+                      "display_name": "sum_revenue",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "316e6420-bbf6-422f-afbc-cb01d90a440c",
+                      "is_selected": true,
+                      "display_name": "sum_quantity",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ac3a23a9-6803-4846-be8f-7bd55304bf82",
+                      "is_selected": true,
+                      "display_name": "count_sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "ffe85639-165a-47fe-9ff8-76862adaa8df",
+                  "is_selected": true,
+                  "display_name": "dim_promotion",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "dde8065f-5a21-4fd8-b991-92d72ba3e79f",
+                      "is_selected": true,
+                      "display_name": "promotion_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d3c5712b-06d5-4048-8e1e-05e0bb8ff81f",
+                      "is_selected": true,
+                      "display_name": "promotion_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "3138d4ae-0d58-4ddd-ae78-66e53a3cef15",
+                      "is_selected": true,
+                      "display_name": "promotion_type",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2dc51f6a-8bef-4954-bd8c-157acf5d3b7a",
+                      "is_selected": true,
+                      "display_name": "discount_pct",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f1daae10-44b4-4f24-aec1-2c6a3638f73b",
+                      "is_selected": true,
+                      "display_name": "start_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "d9bbb707-6929-40e1-8640-0c91b87bd0aa",
+                      "is_selected": true,
+                      "display_name": "end_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "1957b345-357b-4dda-b23c-3cde37c3e886",
+                  "is_selected": true,
+                  "display_name": "fact_sales",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "273fb19d-519a-4cfc-997e-de0f94e64065",
+                      "is_selected": true,
+                      "display_name": "sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6a9d78b3-3ad8-4f50-894a-0840b3d32f2c",
+                      "is_selected": true,
+                      "display_name": "customer_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2a2be04a-4f6f-45e6-956e-f07b9f521803",
+                      "is_selected": true,
+                      "display_name": "product id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "83c1bb04-56c3-458e-b945-b07d48685113",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "aa312b42-14db-44df-824e-cb6036941bc3",
+                      "is_selected": true,
+                      "display_name": "promotion_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "60b123a4-bffb-4427-b178-d4b6c0f09330",
+                      "is_selected": true,
+                      "display_name": "quantity",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "517bb469-4a29-4e65-9f83-d4c25c6a5c8c",
+                      "is_selected": true,
+                      "display_name": "unit_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "8001bf6b-6e3b-4fd9-a673-621298748a3a",
+                      "is_selected": true,
+                      "display_name": "discount_amt",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "417c056f-45ae-4ef8-b624-0902697d0d03",
+                      "is_selected": true,
+                      "display_name": "revenue",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1b5c914a-c03d-4593-bde1-75aba4edb750",
+                      "is_selected": true,
+                      "display_name": "discount_pct",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6266222b-ff12-44dc-adbf-4ee9ad5be37b",
+                      "is_selected": true,
+                      "display_name": "sale_date_clean",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2ed36d2f-36d0-41f0-86b3-b3bbb39aa837",
+                      "is_selected": true,
+                      "display_name": "sale_year",
+                      "type": "warehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "21cfa0e4-e10e-4646-8132-f55d605f0768",
+                      "is_selected": true,
+                      "display_name": "sale_month",
+                      "type": "warehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c92d51fc-7fba-45b5-a02e-f87b425b496c",
+                      "is_selected": true,
+                      "display_name": "sale_day",
+                      "type": "warehouse_tables.column",
+                      "data_type": "int",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "345d86d9-473b-47df-9897-58a3af014b99",
+          "is_selected": false,
+          "display_name": "stg",
+          "type": "warehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "6a794932-f4fe-490c-a29b-e9cb97be99aa",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "ba0073df-1c76-4e80-829c-34f913de416d",
+                  "is_selected": false,
+                  "display_name": "dim_customer",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "b3796403-e24a-46f0-8e02-c1c8d3083905",
+                      "is_selected": true,
+                      "display_name": "customer_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9465c65e-3556-4248-a0d2-0f445b8b4fde",
+                      "is_selected": true,
+                      "display_name": "customer_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a227b109-716f-4cd6-b1b6-519221aa92a0",
+                      "is_selected": true,
+                      "display_name": "full_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9f04b1fe-2b7e-4ef0-9a59-2f528b5f0f69",
+                      "is_selected": true,
+                      "display_name": "email",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "e20b6a0d-200d-41bc-b658-67df537433e8",
+                      "is_selected": true,
+                      "display_name": "city",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1e4877f8-5210-4260-99e5-16c955d177a7",
+                      "is_selected": true,
+                      "display_name": "country",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4264619a-a543-47a6-9002-59b29da8c6f8",
+                      "is_selected": true,
+                      "display_name": "segment",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "169ee443-cf52-480c-b7ce-ced4197e2b78",
+                      "is_selected": true,
+                      "display_name": "created_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "670602e1-1e92-42bf-861f-f249c867fe6b",
+                  "is_selected": false,
+                  "display_name": "dim_product",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "b40fd222-26b9-4300-bf92-dff0a2cdae50",
+                      "is_selected": true,
+                      "display_name": "product_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9132a0ae-3a68-44df-a401-b5cef031730e",
+                      "is_selected": true,
+                      "display_name": "product_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "caf27bef-3b4c-4981-99ae-ce235dea47ee",
+                      "is_selected": true,
+                      "display_name": "product_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "20658e41-477c-4838-8f80-b19f691628cc",
+                      "is_selected": true,
+                      "display_name": "category",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "c2eaf8aa-34c8-47cb-b87d-1d05578cb1cd",
+                      "is_selected": true,
+                      "display_name": "subcategory",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "9a5ea363-a994-4d91-91b6-9a374787c134",
+                      "is_selected": true,
+                      "display_name": "brand",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "674b14ed-d312-4070-85b6-fd4c5098ca57",
+                      "is_selected": true,
+                      "display_name": "cost_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "12563f5d-d54f-49c1-951a-42de2922a134",
+                      "is_selected": true,
+                      "display_name": "list_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "e66cd07d-d3bf-409a-bbee-895966265cf8",
+                  "is_selected": false,
+                  "display_name": "fact_sales",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "f5c9c222-5ee0-40cc-bda8-9626cbf0d6ca",
+                      "is_selected": true,
+                      "display_name": "sale_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f277ca5e-2fe9-40aa-90b1-4bc60e8cef2c",
+                      "is_selected": true,
+                      "display_name": "customer_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ee72094d-b760-4dc3-8393-3933c403db68",
+                      "is_selected": true,
+                      "display_name": "product id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "1f9df841-649e-4954-a53c-11c256c2dbad",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "3b199e76-fefd-4cc8-98aa-6a9d77221ecb",
+                      "is_selected": true,
+                      "display_name": "promotion_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4fa3fb86-70cb-4a45-8e65-639e6abbd3b5",
+                      "is_selected": true,
+                      "display_name": "quantity",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "aba57eae-f62b-40d9-ac09-7c2150961224",
+                      "is_selected": true,
+                      "display_name": "unit_price",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "f71adf12-1aea-41bc-8d0f-4f60e3d7cff2",
+                      "is_selected": true,
+                      "display_name": "discount_amt",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "71da8473-1624-4e58-be32-efcc12e18d16",
+                      "is_selected": true,
+                      "display_name": "revenue",
+                      "type": "warehouse_tables.column",
+                      "data_type": "float",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6ceb9584-2ef8-4aed-9569-e145ef5755c0",
+                      "is_selected": true,
+                      "display_name": "discount_pct",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6ceee66e-0254-4888-9acc-2d74668516a9",
+                      "is_selected": true,
+                      "display_name": "sale_date_clean",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "551c3d1d-ab38-4729-b76c-5b01f63ac05a",
+                  "is_selected": false,
+                  "display_name": "dim_store",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "592ca9d8-e079-4d88-9bed-f37626694dde",
+                      "is_selected": true,
+                      "display_name": "store_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "4551324e-391f-4b64-adbc-ca07984084a9",
+                      "is_selected": true,
+                      "display_name": "store_id",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ab38f922-89cd-4441-b2e7-6fccebd6c97f",
+                      "is_selected": true,
+                      "display_name": "store_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "17d43ac2-44e9-40d2-8992-3b92fedaa1c1",
+                      "is_selected": true,
+                      "display_name": "city",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "63e73688-f155-4208-b286-b5ee3584eb12",
+                      "is_selected": true,
+                      "display_name": "country",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "28770651-5615-4190-b19d-be6db8405c49",
+                      "is_selected": true,
+                      "display_name": "region",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2758eab5-53a0-43fd-b3db-91e28a9d2f7b",
+                      "is_selected": true,
+                      "display_name": "store_type",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "2bb28e1d-c070-4402-a057-b0b5c0d78328",
+                      "is_selected": true,
+                      "display_name": "open_year",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "74e97a31-6cd5-4b1e-b423-5897cb63f890",
+                  "is_selected": false,
+                  "display_name": "dim_promotion",
+                  "type": "warehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "1cf425cf-6cac-4c2c-a8dc-5cb031a73270",
+                      "is_selected": true,
+                      "display_name": "promotion_key",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b62449a6-4443-40e8-aee2-00726b8a4cd9",
+                      "is_selected": true,
+                      "display_name": "promotion_name",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "6700da40-e7c9-4837-bfc4-9ba11db01e11",
+                      "is_selected": true,
+                      "display_name": "promotion_type",
+                      "type": "warehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "86f67582-8314-4b3a-abdf-f70faeab365c",
+                      "is_selected": true,
+                      "display_name": "discount_pct",
+                      "type": "warehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "402eebb4-8f34-4913-bf6d-158135ccc4a6",
+                      "is_selected": true,
+                      "display_name": "start_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "ce105038-e92c-4ef6-82f5-02f8e0759127",
+                      "is_selected": true,
+                      "display_name": "end_date",
+                      "type": "warehouse_tables.column",
+                      "data_type": "date",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

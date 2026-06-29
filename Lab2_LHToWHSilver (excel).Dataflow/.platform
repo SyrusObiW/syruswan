@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Lab2_LHToWHSilver (excel)"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "09b6128c-0266-be7c-4722-4b7709e79a31"
+  }
+}

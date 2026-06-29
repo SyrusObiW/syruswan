@@ -1,0 +1,28 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "WHSilverToWHGold (dim store)",
+  "queryGroups": [],
+  "documentLocale": "zh-HK",
+  "queriesMetadata": {
+    "stg dim_store": {
+      "queryId": "0869a1f2-a837-4ff9-afc0-71f6896d0c2b",
+      "queryName": "stg dim_store"
+    },
+    "stg dim_store_DataDestination": {
+      "queryId": "cbb551f9-74f1-4a50-9969-a47736c35b07",
+      "queryName": "stg dim_store_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"97c7b270-2fa9-4300-bfd6-d2cacc0d6ff3\",\"DatasourceId\":\"40543a49-a8ad-4470-9d46-72459ea0644a\"}"
+    }
+  ]
+}

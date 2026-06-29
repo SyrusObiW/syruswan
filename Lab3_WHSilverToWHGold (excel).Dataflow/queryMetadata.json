@@ -1,0 +1,83 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Lab3_WHSilverToWHGold (excel)",
+  "queryGroups": [],
+  "documentLocale": "zh-HK",
+  "queriesMetadata": {
+    "stg dim_customer": {
+      "queryId": "f4d98b3e-ec15-49da-bded-c4f7699bfbdb",
+      "queryName": "stg dim_customer"
+    },
+    "stg dim_product": {
+      "queryId": "60faf75c-e3da-4ae5-8a6d-b7973c23c304",
+      "queryName": "stg dim_product"
+    },
+    "stg dim_promotion": {
+      "queryId": "0dcab797-cd6c-4477-bf9a-a832e5168ac7",
+      "queryName": "stg dim_promotion"
+    },
+    "stg dim_store": {
+      "queryId": "3f0255e5-8035-4604-a0fd-5bd24c314d6a",
+      "queryName": "stg dim_store"
+    },
+    "stg fact_sales": {
+      "queryId": "e54fedcb-bdc5-4e14-856b-3d25bf6c595f",
+      "queryName": "stg fact_sales",
+      "loadEnabled": false
+    },
+    "agg_sales_by_customer": {
+      "queryId": "347eac51-a7e5-43d1-b0c9-9d21a6501f03",
+      "queryName": "agg_sales_by_customer"
+    },
+    "agg_sales_by_product": {
+      "queryId": "6f98f927-e828-4039-b877-28a78bb8faa4",
+      "queryName": "agg_sales_by_product"
+    },
+    "stg dim_product_DataDestination": {
+      "queryId": "57df1186-ce75-4aec-aeef-fb99768147b6",
+      "queryName": "stg dim_product_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "stg dim_customer_DataDestination": {
+      "queryId": "995e8eee-4194-4dbc-b5da-4f28b65ee5f1",
+      "queryName": "stg dim_customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "stg dim_promotion_DataDestination": {
+      "queryId": "897d1c35-1daf-44b1-8b5d-e87cf46fc128",
+      "queryName": "stg dim_promotion_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "stg dim_store_DataDestination": {
+      "queryId": "07f9c9b5-67d8-4ba4-a2e6-ce25d8f95205",
+      "queryName": "stg dim_store_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "agg_sales_by_customer_DataDestination": {
+      "queryId": "5a742dbd-b063-4c20-96c8-88a95a5a82c3",
+      "queryName": "agg_sales_by_customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "agg_sales_by_product_DataDestination": {
+      "queryId": "83ee9a0b-b15f-4772-bf04-3f7899c55a0b",
+      "queryName": "agg_sales_by_product_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"97c7b270-2fa9-4300-bfd6-d2cacc0d6ff3\",\"DatasourceId\":\"40543a49-a8ad-4470-9d46-72459ea0644a\"}"
+    }
+  ]
+}

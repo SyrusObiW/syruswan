@@ -1,0 +1,166 @@
+table fact_sales
+	lineageTag: 936a1a77-745e-49ea-bcef-82a66a1c0eca
+	sourceLineageTag: [dbo].[fact_sales]
+
+	column sale_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 81e6bfc1-277f-4386-8f3e-7167987dc7e9
+		sourceLineageTag: sale_id
+		summarizeBy: none
+		sourceColumn: sale_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8586f484-1832-456b-99b0-e1c1af3ef477
+		sourceLineageTag: customer_id
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'product id'
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dced204a-25dd-4d3e-b93d-3d4ec0615651
+		sourceLineageTag: product id
+		summarizeBy: none
+		sourceColumn: product id
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c4ffb879-7a84-43c3-a2a7-a9ece93e8224
+		sourceLineageTag: store_id
+		summarizeBy: none
+		sourceColumn: store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column promotion_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 099c3311-4301-4904-85b4-596846bc4743
+		sourceLineageTag: promotion_id
+		summarizeBy: none
+		sourceColumn: promotion_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f7eae813-1d1b-4431-8204-d2981b26d48e
+		sourceLineageTag: quantity
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_price
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c240bed3-23b3-492d-90b5-aa5b320b29ec
+		sourceLineageTag: unit_price
+		summarizeBy: sum
+		sourceColumn: unit_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_amt
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 41d74328-5472-4774-b795-a983746f357c
+		sourceLineageTag: discount_amt
+		summarizeBy: sum
+		sourceColumn: discount_amt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c14c4022-14de-4c9b-b2bb-18b52f5d5b4c
+		sourceLineageTag: revenue
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discount_pct
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 36abf3d6-ea8e-4e2a-b2a1-a6be694ea236
+		sourceLineageTag: discount_pct
+		summarizeBy: sum
+		sourceColumn: discount_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_date_clean
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 38975342-2da4-4bcc-9942-1e8263ac513c
+		sourceLineageTag: sale_date_clean
+		summarizeBy: none
+		sourceColumn: sale_date_clean
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0afe53ef-57a2-4267-affc-360f824213ba
+		sourceLineageTag: sale_year
+		summarizeBy: sum
+		sourceColumn: sale_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_month
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 6e5de7c1-b545-448d-a362-7637d9d0767e
+		sourceLineageTag: sale_month
+		summarizeBy: sum
+		sourceColumn: sale_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_day
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 15be9d28-5117-4da2-8ae1-142e5f2160aa
+		sourceLineageTag: sale_day
+		summarizeBy: sum
+		sourceColumn: sale_day
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_sales = entity
+		mode: directLake
+		source
+			entityName: fact_sales
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

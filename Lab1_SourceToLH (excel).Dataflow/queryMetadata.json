@@ -1,0 +1,99 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Lab1_SourceToLH",
+  "queryGroups": [],
+  "documentLocale": "zh-HK",
+  "gatewayObjectId": "4894ffd1-45f2-4cfd-b681-c6f78b8bcc02",
+  "queriesMetadata": {
+    "fact_sales": {
+      "queryId": "64acc09d-d493-4736-a4ce-bceb9cf1ed05",
+      "queryName": "fact_sales",
+      "loadEnabled": false
+    },
+    "dim_store": {
+      "queryId": "b8ac1970-5a81-4cfa-a6af-bdddaa100621",
+      "queryName": "dim_store",
+      "loadEnabled": false
+    },
+    "dim_promotion": {
+      "queryId": "ab665c8d-b42f-4d3b-95b4-e41a62e3aaf3",
+      "queryName": "dim_promotion",
+      "loadEnabled": false
+    },
+    "dim_product": {
+      "queryId": "ca1b9c4e-63eb-4141-9cf2-e4bb21eaed6d",
+      "queryName": "dim_product",
+      "loadEnabled": false
+    },
+    "dim_customer": {
+      "queryId": "aa7eeb42-4f6d-4529-89c8-a67b07eded67",
+      "queryName": "dim_customer",
+      "loadEnabled": false
+    },
+    "dim_store_DataDestination": {
+      "queryId": "b113208f-ee38-44af-86b5-fa2f62b09370",
+      "queryName": "dim_store_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_promotion_DataDestination": {
+      "queryId": "f67e3730-96ca-4b62-91c8-e1bc86b87350",
+      "queryName": "dim_promotion_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_product_DataDestination": {
+      "queryId": "479ea377-0ab3-4311-8e07-4a6a9eef4571",
+      "queryName": "dim_product_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_customer_DataDestination": {
+      "queryId": "1b476525-3a7c-4348-97cb-37884843416f",
+      "queryName": "dim_customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "fact_sales_DataDestination": {
+      "queryId": "6bdb8bd2-ca17-4034-b7fd-6643a598a04a",
+      "queryName": "fact_sales_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "C:/Data/For_Excel_User_Sales/fact_sales.csv",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4894ffd1-45f2-4cfd-b681-c6f78b8bcc02\",\"DatasourceId\":\"c326883d-bee8-4fd9-a6c4-ebaa6bdca727\"}"
+    },
+    {
+      "path": "C:\\Data\\For_Excel_User_Sales\\dim_store.csv",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4894ffd1-45f2-4cfd-b681-c6f78b8bcc02\",\"DatasourceId\":\"ca17f3f1-3f03-4431-b438-8ffa895979de\"}"
+    },
+    {
+      "path": "C:\\Data\\For_Excel_User_Sales\\dim_promotion.csv",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4894ffd1-45f2-4cfd-b681-c6f78b8bcc02\",\"DatasourceId\":\"bd4c7559-e6b0-4629-9379-84de63e1fd46\"}"
+    },
+    {
+      "path": "C:\\Data\\For_Excel_User_Sales\\dim_product.csv",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4894ffd1-45f2-4cfd-b681-c6f78b8bcc02\",\"DatasourceId\":\"c27d2616-1566-478b-9ae0-44be57653062\"}"
+    },
+    {
+      "path": "C:\\Data\\For_Excel_User_Sales\\dim_customer.csv",
+      "kind": "File",
+      "connectionId": "{\"ClusterId\":\"4894ffd1-45f2-4cfd-b681-c6f78b8bcc02\",\"DatasourceId\":\"e2514767-2459-46d6-a712-04f8828d0c2b\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"97c7b270-2fa9-4300-bfd6-d2cacc0d6ff3\",\"DatasourceId\":\"76c56987-c06d-4435-8c8a-f8bc1a974474\"}"
+    }
+  ]
+}

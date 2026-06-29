@@ -1,0 +1,79 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Lab2_LHToWH (excel)",
+  "queryGroups": [],
+  "documentLocale": "zh-HK",
+  "queriesMetadata": {
+    "DefaultDestination": {
+      "queryId": "c8b513c1-b3f8-489a-b221-16741a927ad1",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_customer": {
+      "queryId": "28b248c7-c64a-41ca-9eb2-5507e24bef5d",
+      "queryName": "dim_customer"
+    },
+    "dim_product": {
+      "queryId": "aaee33dd-8191-4d85-9b93-f88c7844c993",
+      "queryName": "dim_product"
+    },
+    "dim_promotion": {
+      "queryId": "deb9c6af-2900-4387-ae23-c03c7b369409",
+      "queryName": "dim_promotion"
+    },
+    "dim_store": {
+      "queryId": "cd86aaf7-e7b2-4270-968c-25f8394dcebd",
+      "queryName": "dim_store"
+    },
+    "fact_sales": {
+      "queryId": "46ccc6e4-e7a2-4059-8a92-a7d3f2e2d833",
+      "queryName": "fact_sales"
+    },
+    "dim_customer_DataDestination": {
+      "queryId": "289fea14-5ee0-4f8d-85ee-0dec6cf19eab",
+      "queryName": "dim_customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_store_DataDestination": {
+      "queryId": "3c5142d2-f3b5-4dd2-9666-3ba4a6779b00",
+      "queryName": "dim_store_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "fact_sales_DataDestination": {
+      "queryId": "47af6b6f-25cb-4cc3-8a9b-c9faada7391a",
+      "queryName": "fact_sales_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_promotion_DataDestination": {
+      "queryId": "295bffa6-a249-4059-b5e9-a4554c037010",
+      "queryName": "dim_promotion_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "dim_product_DataDestination": {
+      "queryId": "6d9b7f7c-0e63-4f51-839f-ecb600668193",
+      "queryName": "dim_product_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"97c7b270-2fa9-4300-bfd6-d2cacc0d6ff3\",\"DatasourceId\":\"987547e0-437b-4f3a-bb9b-ccecaa35bd81\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"97c7b270-2fa9-4300-bfd6-d2cacc0d6ff3\",\"DatasourceId\":\"40543a49-a8ad-4470-9d46-72459ea0644a\"}"
+    }
+  ]
+}

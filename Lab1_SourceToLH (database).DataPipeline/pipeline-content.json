@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "InvokeCopyJob",
+        "typeProperties": {
+          "copyJobId": "aad9518e-5615-81bd-4232-674e54d10cfb",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "externalReferences": {
+          "connection": "3b1c7c43-8f7b-427d-b95c-f26e106416c5"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy job",
+        "description": "To copy data from Azure SQL Database to Fabric Lakehouse",
+        "dependsOn": []
+      }
+    ]
+  }
+}

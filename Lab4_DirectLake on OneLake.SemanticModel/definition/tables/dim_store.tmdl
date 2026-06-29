@@ -1,0 +1,85 @@
+table dim_store
+	lineageTag: 16b45c7b-b586-4c75-ae22-454580abd30b
+	sourceLineageTag: [dbo].[dim_store]
+
+	column store_key
+		dataType: int64
+		formatString: 0
+		lineageTag: f7c7738c-8f5d-459d-b156-e7c76a8f3740
+		sourceLineageTag: store_key
+		summarizeBy: none
+		sourceColumn: store_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_id
+		dataType: string
+		lineageTag: f932e3c9-1d54-4fbc-9388-6f3cfc38f108
+		sourceLineageTag: store_id
+		summarizeBy: none
+		sourceColumn: store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_name
+		dataType: string
+		lineageTag: 5c5c398b-ca32-4675-a594-fdd4f6196d95
+		sourceLineageTag: store_name
+		summarizeBy: none
+		sourceColumn: store_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: f96054a7-ea1b-40ce-a8e1-5e08c05b508c
+		sourceLineageTag: city
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: cd8628a2-a21b-4133-8d11-4b2571730d61
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 9cdf1c36-5769-4a1b-8978-24d61af31b39
+		sourceLineageTag: region
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_type
+		dataType: string
+		lineageTag: 0991ce28-b13b-4dc0-a26c-b6da9c5082e4
+		sourceLineageTag: store_type
+		summarizeBy: none
+		sourceColumn: store_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column open_year
+		dataType: int64
+		formatString: 0
+		lineageTag: d42fa289-bc9d-4e36-b33a-86532474c7df
+		sourceLineageTag: open_year
+		summarizeBy: none
+		sourceColumn: open_year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_store = entity
+		mode: directLake
+		source
+			entityName: dim_store
+			schemaName: dbo
+			expressionSource: 'DirectLake - Lab2_WH'
+

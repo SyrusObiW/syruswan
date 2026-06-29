@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "ML_Poker_Classification"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "31b9061f-945d-8740-4c15-a8617690a096"
+  }
+}

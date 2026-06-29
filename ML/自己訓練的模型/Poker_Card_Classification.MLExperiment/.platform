@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLExperiment",
+    "displayName": "Poker_Card_Classification"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0cf9ca5f-0091-a8f9-49cd-d7391ed66148"
+  }
+}

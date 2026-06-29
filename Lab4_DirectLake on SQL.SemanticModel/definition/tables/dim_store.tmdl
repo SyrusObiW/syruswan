@@ -1,0 +1,95 @@
+table dim_store
+	lineageTag: ff077434-3a9c-41ea-a671-beb61e863a01
+	sourceLineageTag: [dbo].[dim_store]
+
+	column store_key
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e53fbc9f-95c7-4f10-8b3e-22bbaa9fb1e2
+		sourceLineageTag: store_key
+		summarizeBy: none
+		sourceColumn: store_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 270a082b-5433-40b9-be7f-5f5d5ce20933
+		sourceLineageTag: store_id
+		summarizeBy: none
+		sourceColumn: store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e19b3d77-3051-498d-9b15-42da7b50e536
+		sourceLineageTag: store_name
+		summarizeBy: none
+		sourceColumn: store_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 498989c2-006e-4865-b1c4-39a7ce067bbe
+		sourceLineageTag: city
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7d6a6184-6406-4a89-ae7c-c74de100115f
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a01a6c6b-48ff-4e3a-922a-60b72bfa276f
+		sourceLineageTag: region
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6ca0d3ad-6ece-4b64-972f-9ff86b87add3
+		sourceLineageTag: store_type
+		summarizeBy: none
+		sourceColumn: store_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column open_year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c89938af-285c-4287-aa87-144f68b7def5
+		sourceLineageTag: open_year
+		summarizeBy: none
+		sourceColumn: open_year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_store = entity
+		mode: directLake
+		source
+			entityName: dim_store
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

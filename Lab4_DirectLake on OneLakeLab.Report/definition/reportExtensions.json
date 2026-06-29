@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "agg_sales_by_customer",
+      "measures": [
+        {
+          "name": "Total Revenue",
+          "dataType": "Double",
+          "expression": "SUM(agg_sales_by_customer[sum_revenue])",
+          "displayFolder": "*Measure"
+        },
+        {
+          "name": "Order Count",
+          "dataType": "Double",
+          "expression": "SUM(agg_sales_by_customer[count_sale_id])",
+          "displayFolder": "*Measure"
+        },
+        {
+          "name": "Total Units",
+          "dataType": "Double",
+          "expression": "SUM(agg_sales_by_customer[sum_quantity])",
+          "displayFolder": "*Measure"
+        },
+        {
+          "name": "Avg Order Value",
+          "dataType": "Double",
+          "expression": "DIVIDE([Total Revenue], [Order Count])",
+          "displayFolder": "*Measure",
+          "references": {
+            "measures": [
+              {
+                "schema": "extension",
+                "entity": "agg_sales_by_customer",
+                "name": "Total Revenue"
+              },
+              {
+                "schema": "extension",
+                "entity": "agg_sales_by_customer",
+                "name": "Order Count"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fact_sales",
+      "measures": [
+        {
+          "name": "*total revenue",
+          "dataType": "Double",
+          "expression": "SUM(fact_sales[revenue])"
+        },
+        {
+          "name": "*count qty",
+          "dataType": "Double",
+          "expression": "COUNT(fact_sales[quantity])"
+        }
+      ]
+    }
+  ]
+}

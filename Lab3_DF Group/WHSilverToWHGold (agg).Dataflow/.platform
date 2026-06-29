@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "WHSilverToWHGold (agg)"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "17c891c1-e202-b1b4-4a0e-b9ad574ed177"
+  }
+}

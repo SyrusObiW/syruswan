@@ -1,0 +1,436 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "AzureSqlTable",
+      "connectionSettings": {
+        "type": "AzureSqlDatabase",
+        "typeProperties": {
+          "database": "fabric_training_lab"
+        },
+        "externalReferences": {
+          "connection": "ed6f9590-076f-4f07-a1d6-a04692d807a5"
+        }
+      }
+    },
+    "destination": {
+      "type": "LakehouseTable",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "57c70cd5-dc11-b2ef-4811-ee3e290beacc",
+          "rootFolder": "Tables"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00",
+      "retry": 0
+    }
+  },
+  "activities": [
+    {
+      "id": "7e803e14-6f3e-4f56-b404-fd1e2335ba45",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_customer"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_customer"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator",
+          "mappings": [
+            {
+              "source": {
+                "name": "customer_key",
+                "type": "Int32",
+                "physicalType": "int"
+              },
+              "destination": {
+                "name": "customer_key",
+                "physicalType": "integer"
+              }
+            },
+            {
+              "source": {
+                "name": "customer_id",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "10"
+              },
+              "destination": {
+                "name": "customer_id",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "full_name",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "100"
+              },
+              "destination": {
+                "name": "full_name",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "email",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "150"
+              },
+              "destination": {
+                "name": "email",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "city",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "80"
+              },
+              "destination": {
+                "name": "city",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "country",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "60"
+              },
+              "destination": {
+                "name": "country",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "segment",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "30"
+              },
+              "destination": {
+                "name": "segment",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "created_date",
+                "type": "DateTime",
+                "physicalType": "date"
+              },
+              "destination": {
+                "name": "created_date",
+                "physicalType": "date"
+              }
+            }
+          ]
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "320e54bb-d37d-4ffc-9b94-100c69f96330",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_date"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_date"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator",
+          "mappings": [
+            {
+              "source": {
+                "name": "date_key",
+                "type": "Int32",
+                "physicalType": "int"
+              },
+              "destination": {
+                "name": "date_key",
+                "physicalType": "integer"
+              }
+            },
+            {
+              "source": {
+                "name": "full_date",
+                "type": "DateTime",
+                "physicalType": "date"
+              },
+              "destination": {
+                "name": "full_date",
+                "physicalType": "date"
+              }
+            },
+            {
+              "source": {
+                "name": "year",
+                "type": "Int16",
+                "physicalType": "smallint"
+              },
+              "destination": {
+                "name": "year",
+                "physicalType": "short"
+              }
+            },
+            {
+              "source": {
+                "name": "quarter",
+                "type": "Byte",
+                "physicalType": "tinyint"
+              },
+              "destination": {
+                "name": "quarter",
+                "physicalType": "short"
+              }
+            },
+            {
+              "source": {
+                "name": "month",
+                "type": "Byte",
+                "physicalType": "tinyint"
+              },
+              "destination": {
+                "name": "month",
+                "physicalType": "short"
+              }
+            },
+            {
+              "source": {
+                "name": "month_name",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "10"
+              },
+              "destination": {
+                "name": "month_name",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "week_of_year",
+                "type": "Byte",
+                "physicalType": "tinyint"
+              },
+              "destination": {
+                "name": "week_of_year",
+                "physicalType": "short"
+              }
+            },
+            {
+              "source": {
+                "name": "day_of_week",
+                "type": "Byte",
+                "physicalType": "tinyint"
+              },
+              "destination": {
+                "name": "day_of_week",
+                "physicalType": "short"
+              }
+            },
+            {
+              "source": {
+                "name": "day_name",
+                "type": "String",
+                "physicalType": "varchar",
+                "length": "10"
+              },
+              "destination": {
+                "name": "day_name",
+                "physicalType": "string"
+              }
+            },
+            {
+              "source": {
+                "name": "is_weekend",
+                "type": "Boolean",
+                "physicalType": "bit"
+              },
+              "destination": {
+                "name": "is_weekend",
+                "physicalType": "boolean"
+              }
+            }
+          ]
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "5c411db7-f69f-47ae-a02b-53045fcdbb00",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_product"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_product"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "8c4309a0-7354-44b8-865d-70ed2d75686d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_promotion"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_promotion"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "9992524b-5095-4228-8ed3-5659b004ec34",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_store"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "dim_store"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "07580ad8-a9b7-4b4f-a62e-2185038d358d",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "fact_sales"
+          },
+          "partitionSettings": {
+            "partitionOption": "None"
+          }
+        },
+        "destination": {
+          "writeBehavior": "Append",
+          "datasetSettings": {
+            "schema": "sales",
+            "table": "fact_sales"
+          },
+          "applyVOrder": false
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
+}

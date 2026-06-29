@@ -1,0 +1,96 @@
+table dim_product
+	lineageTag: 0610658a-fb84-4779-bb47-44f887c6e7da
+	sourceLineageTag: [dbo].[dim_product]
+
+	column product_key
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: fb3e0ea6-1f44-4a84-ae7e-853da390fd95
+		sourceLineageTag: product_key
+		summarizeBy: none
+		sourceColumn: product_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fd179af4-36b6-4d04-a181-337283f91c31
+		sourceLineageTag: product_id
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 299b126d-80dc-4bad-816d-a2ceadc7cff2
+		sourceLineageTag: product_name
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 584280aa-2828-4c96-8562-954f125cd2b6
+		sourceLineageTag: category
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column subcategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 122dd509-866c-45ff-a970-098f0f71ed90
+		sourceLineageTag: subcategory
+		summarizeBy: none
+		sourceColumn: subcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: acc69d7c-1dce-4aee-99e8-0fab2c91c60b
+		sourceLineageTag: brand
+		summarizeBy: none
+		sourceColumn: brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_price
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4c631add-27da-4c4d-a611-47618e3c2f7c
+		sourceLineageTag: cost_price
+		summarizeBy: none
+		sourceColumn: cost_price
+
+		annotation SummarizationSetBy = Automatic
+
+	column list_price
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8f7afc41-799e-4efa-a607-64d098dc6394
+		sourceLineageTag: list_price
+		summarizeBy: none
+		sourceColumn: list_price
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_product = entity
+		mode: directLake
+		source
+			entityName: dim_product
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

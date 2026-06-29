@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Lab1_SourceToLH (excel)",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "79993834-4b58-b25c-4137-a5a69aaff59a"
+  }
+}
